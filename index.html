@@ -1,49 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css">
 
     <title>Pedra, Papel e Tesoura</title>
 </head>
 <body>
     <header>
-        <h1>< pedra papel tesoura ></h1>
+        <h1 class="header__title">< pedra papel tesoura ></h1>
     </header>
-    <main>
-        <div class="game">
-            <div id="computer">
-                <h3>Computador</h3>
-                <span id="com-choice"></span>
+    <main class="game" id="game">
+        <div class="game__players">
+            <div id="computer" class="game__div game__div--com">
+                <h3 class="game__div__title">Computador</h3>
+                <span id="com-choice" class="com__choice"></span>
             </div>
-            <div id="user">
-                <h3>Sua escolha</h3>
-                <div class="choices">
-                    <button id="rock">✊</button>
-                    <button id="paper">✋</button>
-                    <button id="scissors">✌️</button>
+            <div id="user" class="game__div game__div--user">
+                <h3 class="game__div__title">Sua escolha</h3>
+                <div id="user-options" class="user__options">
+                    <button id="rock" class="user__options__item user__options__item--rock">✊</button>
+                    <button id="paper" class="user__options__item user__options__item--paper">🖐</button>
+                    <button id="scissors" class="user__options__item user__options__item--scissors">✌️</button>
                 </div>
-                <span id="user-choice"></span>
+                <span id="user-choice" class="user__choice"></span>
             </div>
         </div>
-        <div class="game-result">
-            <span id="result"></span>
+        <div id="game-result-div" class="game__div game__div--result">
+            <span id="result" class="game__result__text"></span>
+            <button id="play-again-btn" class="game__play-again-button">Jogar Novamente</button>
         </div>
     </main>
     <footer>
-        <a href="https://www.linkedin.com/in/joice-gomes-dn/" target="_blank">
-            <i class="fa-brands fa-linkedin"></i>
+        <a class="footer__link" href="https://www.linkedin.com/in/joice-gomes-dn/" target="_blank">
             LinkedIn
         </a>
-        <p>Dev Joice Gomes &copy; 2022</p>
-        <a href="https://github.com/Joi-GN" target="_blank">
-            <i class="fa-brands fa-github-square"></i>
+        <p class="footer__text">Dev Joice Gomes &copy; 2022</p>
+        <a class="footer__link" href="https://github.com/Joi-GN" target="_blank">
             Github
         </a>
     </footer>
-    <script src="script.js"></script>
+    <script src="assets/script.js"></script>
 </body>
 </html>
